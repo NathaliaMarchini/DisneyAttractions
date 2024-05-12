@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+}
+
+.triangle.left {
+    border-left: 88vw solid #08748C; /* Metade da largura da tela */
+    border-bottom: 100vh solid transparent; /* Altura total da tela */
+}
+
+
+.container2{
+    width: 100%;
+    height: 50vw;
+    background-color: #B4CFD4;
+}
+
+.volt{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.um h1{
+    margin-top: 1vw;
+    margin-left: 2vw;
+    font-family: "Convergence", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.3vw;
+    text-shadow: 0.5vw 0.2vw 0px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes brilho {
+    0% { text-shadow: 0 0 10px #daba2c; }
+    50% { text-shadow: 0 0 20px #FFFF99; }
+    100% { text-shadow: 0 0 10px #FFFF99; }
+}
+
+.um h1:hover{
+    animation: brilho 1.5s infinite alternate;
+    cursor: pointer;
+}
+
+.um, .dois{
+    flex: 1;
+}
+
+.conteudoD{
+    width: 100%;
+    height: 45vw;
+    display: flex;
+}
+
+.tres{
+    height: 100%;
+    display: flex;
+}
+
+.tres, .quatro{
+    flex: 1;
+}
+
+.tres img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.cadastroC{
+    margin-left: 2vw;
+    margin-top: 1vw;
+    width: 62%;
+    height: 85%;
+    background-color: white;
+    border-radius: 1vw;
+    box-shadow: 3vw 3vw 0.2vw rgba(15, 100, 119, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.part1{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.part1 h1{
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0.9vw;
+}
+
+.part1 a{
+    color: black;
+}
+
+.part2{
+    width: 100%;
+    height: 10%;
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.googleB{
+    width: 70%;
+    height: 84%;
+    border-radius: 0.8vw;
+    background-color: white;
+    display: flex;
+    box-shadow: 2px 3px 3px rgba(44, 44, 44, 0.5);
+}
+
+.googleimg{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.googleimg img{
+    width: 50%;
+    height: 70%;
+}
+
+.loginG{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginG h1{
+    font-size: 0.8vw;
+}
+
+.loginG a{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.part3{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    margin-left: 1vw;
+    width: 22%;
+    height: 0.1vw;
+    background-color: #808080;
+}
+
+.between{
+    width: 50%;
+    height: 100%;
+}
+
+.line2{
+    width: 22%;
+    height: 0.1vw;
+    background-color: #808080;
+}
+
+.between{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.between h1{
+    font-size: 1vw;
+    color: #808080;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.part4{
+    width: 100%;
+    height: 17vw;
+    background-color: aqua;
+}
+
+.part5{
+    width: 100%;
+    height: 4vw;
+    display: flex;
+}
+
+.quadrado{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Q{
+    margin-left: 60%;
+    width: 1.5vw;
+    height: 1.5vw;
+    border: 1px solid black;
+}
+
+.diretrizesF{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.diretrizesF h1{
+    color:#808080;
+    font-size: 0.8vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.part6{
+    width: 100%;
+    height: 4.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part6 h1{
+    margin-top: -2.5vw;
+    text-decoration: underline;
+    color:#0000FF ;
+    font-size: 0.8vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
