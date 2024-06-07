@@ -1,11 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Coda:wght@400;800&family=Comfortaa:wght@300..700&family=Commissioner:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/attractions.css">
 </head>
+
 <body>
-    
+    <section class="conteudo">
+        <div class="nave">
+            <div class="cont">
+                <div class="one">
+                    <a href="/">
+                        <img src="/img/homeImg.png" alt="">
+                    </a>
+
+                    <a href="/listaInsc" id="LIIN">Lista inscrições</a>
+                </div>
+                <div class="two">
+                    <input type="text" id="search" placeholder="Search...">
+                </div>
+                <div class="three">
+                    <div class="image">
+                        <a href="/perfil"><img src="/img/mickeyIcon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="frase">
+            <div class="Fcont">
+                <h1>Atrações</h1>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="conteudoDois">
+        <div class="WhiteBox">
+            <div class="part1">
+                <h1>Aproveite para explorar e escolher seu próximo passeio!</h1>
+            </div>
+
+
+            <div class="part2">
+
+                <div class="slider">
+
+                    <div class="slides">
+                        {{!-- radio buttons --}}
+
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        {{!-- /radio buttons --}}
+
+                        {{!-- slides images --}}
+                        <div class="slide first">
+                            <img src="/img/carrouselImg1.png" alt="imagem 1">
+                        </div>
+                        <div class="slide" id="carrousel2">
+                            <img src="/img/carrousel4.png" alt="imagem 2">
+                        </div>
+                        <div class="slide">
+                            <img src="/img/carrousel2.png" alt="imagem 3">
+                        </div>
+                        <div class="slide">
+                            <img src="/img/carrousel3.png" alt="imagem 4">
+                        </div>
+                        {{!-- /slide images --}}
+
+
+
+                        {{!-- navigation auto --}}
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="attractionsSection">
+                <div class="circles">
+                    <div class="ball" id="ballUm">
+                        <div class="um">
+                            <img src="/img/roda-mickey.png" alt="">
+                            <span class="tooltiptext">Esta icônica roda-gigante oferece duas opções de cabines: fixas e
+                                balançantes. Embarque nas cabines que deslizam pelos trilhos curvados, proporcionando
+                                uma aventura cheia de adrenalina e vistas espetaculares do parque</span>
+                        </div>
+                    </div>
+                    <div class="ball" id="ballDois">
+                        <div class="dois">
+                            <img src="/img/firstOrder.png" alt="">
+                            <span class="tooltiptext">Vivencie a imponência do March of the First Order no Disney's
+                                Hollywood Studios! Assista enquanto a tropa da Primeira Ordem, liderada pelo imponente
+                                Capitão Phasma, desfila pelas ruas do parque. Com precisão militar e uma presença
+                                imponente, os stormtroopers marcham em formação, garantindo uma experiência emocionante
+                                e envolvente para todos os fãs de Star Wars.</span>
+                        </div>
+                    </div>
+                    <div class="ball" id="ballTres">
+                        <div class="tres">
+                            <img src="/img/toystory.png" alt="">
+                            <span class="tooltiptext">Bem-vindo ao mundo encantado de Toy Story Land no Disney's
+                                Hollywood Studios! Entre em um universo onde os brinquedos ganham vida e mergulhe em
+                                aventuras emocionantes inspiradas nos filmes amados da Pixar. Explore a terra dos
+                                brinquedos enquanto você se encolhe para o tamanho de um brinquedo e se junta a Woody,
+                                Buzz Lightyear e seus amigos em missões divertidas e cheias de diversão.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="quadrado">
+                        <div class="qUm">
+                            <div class="nome">
+                                <h1>Pixar Pal-A-Round – Swinging</h1>
+                            </div>
+                            <div class="location">
+                                <div class="iconL">
+                                    <div class="containerlocation">
+                                        <img src="/img/location.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="locationh1">
+                                    <h1>Pixar Pal-A-Round – Swinging | Pixar Pier, Animation Avenue, Pal-A-Round
+                                        Boulevard</h1>
+                                </div>
+                            </div>
+                            <div class="inscrever">
+                                <Div class="plusbutton">
+                                    <a href="/inscricao" id="plusButton">
+                                        <img src="/img/plus.png" alt="">
+                                    </a>
+                                </Div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quadrado2">
+                        <div class="qDois">
+                            <div class="nome">
+                                <h1>March of the First Order</h1>
+                            </div>
+                            <div class="location">
+                                <div class="iconL">
+                                    <div class="containerlocation">
+                                        <img src="/img/location.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="locationh1">
+                                    <h1>March of the First Order - Tomorrowland, Disneyland Park</h1>
+                                </div>
+                            </div>
+                            <div class="inscrever">
+                                <div class="plusbutton">
+                                    <a href="/inscricao" id="plusButton">
+                                        <img src="/img/plus.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quadrado3">
+                        <div class="qTres">
+                            <div class="nome">
+                                <h1>Toy Story Land</h1>
+                            </div>
+                            <div class="location">
+                                <div class="iconL">
+                                    <div class="containerlocation">
+                                        <img src="/img/location.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="locationh1">
+                                    <h1>Toy Story Land, Disneyland Park</h1>
+                                </div>
+                            </div>
+                            <div class="inscrever">
+                                <div class="plusbutton"><a href="/inscricao">
+                                        <img src="/img/plus.png" alt="">
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="attractionsSection">
+                <div class="circles">
+                    <div class="ball" id="ballUm">
+                        <div class="um">
+                            <img src="/img/bolaEarth.png" alt="">
+                            <span class="tooltiptext">Embarque em uma viagem única através do tempo e do espaço no
+                                Spaceship Earth do EPCOT! Esta icônica esfera geodésica não é apenas um marco visual
+                                impressionante, mas também abriga uma atração fascinante que explora a história da
+                                humanidade. Testemunhe momentos cruciais da história, desde os primeiros dias da
+                                civilização até os avanços tecnológicos do futuro.</span>
+                        </div>
+                    </div>
+                    <div class="ball" id="ballDois">
+                        <div class="dois">
+                            <img src="/img/chip's.png" alt="">
+                            <span class="tooltiptext">Junte-se a Chip 'n' Dale para uma noite inesquecível ao redor da
+                                fogueira no Chip 'n' Dale Campfire no Disney's Fort Wilderness Resort! Esta experiência
+                                acolhedora é perfeita para toda a família, combinando diversão ao ar livre com o calor
+                                do convívio com os personagens favoritos da Disney. Cante músicas, participe de jogos e
+                                ria muito enquanto os adoráveis esquilos brincam e interagem com os hóspedes. Não se
+                                esqueça de trazer marshmallows para assar e fazer s'mores deliciosos! </span>
+                        </div>
+                    </div>
+                    <div class="ball" id="ballTres">
+                        <div class="tres">
+                            <img src="/img/dinosaur.png" alt="">
+                            <span class="tooltiptext">Prepare-se para uma aventura emocionante e cheia de adrenalina no
+                                Dinosaur do Disney's Animal Kingdom! Entre em uma máquina do tempo e viaje de volta à
+                                era dos dinossauros, onde você encontrará criaturas pré-históricas em seu habitat
+                                natural. A bordo de um veículo de expedição, você será levado em uma missão arriscada
+                                para resgatar um dinossauro antes que ele seja extinto para sempre.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="quadrado">
+                        <div class="qUm">
+                            <div class="nome">
+                                <h1>Spaceship Earth</h1>
+                            </div>
+                            <div class="location">
+                                <div class="iconL">
+                                    <div class="containerlocation">
+                                        <img src="/img/location.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="locationh1" id="correcao">
+                                    <h1>Spaceship Earth, Epcot, Walt Disney World Resort</h1>
+                                </div>
+                            </div>
+                            <div class="inscrever">
+                                <Div class="plusbutton"><a href="/inscricao">
+                                        <img src="/img/plus.png" alt="">
+                                    </a></Div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quadrado2">
+                        <div class="qDois">
+                            <div class="nome">
+                                <h1>Chip n' Dale Campfire</h1>
+                            </div>
+                            <div class="location">
+                                <div class="iconL">
+                                    <div class="containerlocation">
+                                        <img src="/img/location.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="locationh1">
+                                    <h1>Chip n' Dale Campfire, Fort Wilderness Resort, Walt Disney World Resort</h1>
+                                </div>
+                            </div>
+                            <div class="inscrever">
+                                <div class="plusbutton"><a href="/inscricao">
+                                        <img src="/img/plus.png" alt="">
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quadrado3">
+                        <div class="qTres">
+                            <div class="nome">
+                                <h1>Dinosaur</h1>
+                            </div>
+                            <div class="location">
+                                <div class="iconL">
+                                    <div class="containerlocation">
+                                        <img src="/img/location.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="locationh1" id="correcao">
+                                    <h1>Dinosaur, Disney's Animal Kingdom</h1>
+                                </div>
+                            </div>
+                            <div class="inscrever">
+                                <div class="plusbutton"><a href="/inscricao">
+                                        <img src="/img/plus.png" alt="">
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="photoSection">
+                <div class="ret">
+                    <div class="photo">
+                        <div class="retzinho">
+                            <h1>YOUR DREAM</h1>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <div class="retzinho2">
+                            <h1>COME TRUE!</h1>
+                        </div>
+                        <div class="legendaas">
+                            <div class="Legen">
+                                <h1>JUST HERE!</h1>
+                            </div>
+                            <div class="legen">
+                                <h1>Make the best memories with your family.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="attractionsSection">
+                <div class="circles">
+                    <div class="ball" id="ballUm">
+                        <div class="um">
+                            <img src="/img/montanharussa.png" alt="">
+                            <span class="tooltiptext">Prepare-se para uma corrida emocionante com o Slinky Dog Dash no
+                                Toy Story Land, no Disney's Hollywood Studios! Esta montanha-russa é uma celebração da
+                                diversão e da amizade, inspirada nos adoráveis brinquedos de Andy da franquia Toy Story.
+                                A bordo do icônico cachorro de mola, você será lançado em uma aventura cheia de giros,
+                                subidas e descidas emocionantes!</span>
+                        </div>
+                    </div>
+                    <div class="ball" id="ballDois">
+                        <div class="dois">
+                            <img src="/img/avatar.png" alt="">
+                            <span class="tooltiptext">Embarque em uma jornada épica de tirar o fôlego no Avatar Flight
+                                of Passage, uma das atrações mais emocionantes do Disney's Animal Kingdom! Inspirada no
+                                mundo deslumbrante de Pandora do filme "Avatar", esta experiência de simulador de voo
+                                coloca você no dorso de um banshee para explorar as maravilhas deste planeta
+                                alienígena.</span>
+                        </div>
+                    </div>
+                    <div class="ball" id="ballTres">
+                        <div class="tres">
+                            <img src="/img/snowwhite.png" alt="">
+                            <span class="tooltiptext">Embarque em um conto de fadas clássico no Snow White's Enchanted
+                                Wish, uma atração mágica no coração do Disneyland Park! Esta atração intemporal convida
+                                você a se juntar à adorável Branca de Neve em uma jornada encantadora pelos momentos
+                                mais icônicos de seu conto de fadas. </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="quadrado">
+                        <div class="qUm">
+                            <div class="nome">
+                                <h1>Slinky Dog Dash</h1>
+                            </div>
+                            <div class="location">
+                                <div class="iconL">
+                                    <div class="containerlocation">
+                                        <img src="/img/location.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="locationh1">
+                                    <h1>Slinky Dog Dash, Toy Story Land, Disney's Hollywood Studios</h1>
+                                </div>
+                            </div>
+                            <div class="inscrever">
+                                <Div class="plusbutton"><a href="/inscricao">
+                                        <img src="/img/plus.png" alt="">
+                                    </a></Div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quadrado2">
+                        <div class="qDois">
+                            <div class="nome">
+                                <h1>Avatar Flight of Passage</h1>
+                            </div>
+                            <div class="location">
+                                <div class="iconL">
+                                    <div class="containerlocation">
+                                        <img src="/img/location.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="locationh1" id="correcao">
+                                    <h1>Avatar Flight of Passage, Pandora - The World of Avatar, Disney's Animal Kingdom
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="inscrever">
+                                <div class="plusbutton"><a href="/inscricao">
+                                        <img src="/img/plus.png" alt="">
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quadrado3">
+                        <div class="qTres">
+                            <div class="nome">
+                                <h1>Snow White's Enchanted Wish</h1>
+                            </div>
+                            <div class="location">
+                                <div class="iconL">
+                                    <div class="containerlocation">
+                                        <img src="/img/location.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="locationh1" id="correcao">
+                                    <h1>Snow White's Enchanted Wish, Disneyland Park</h1>
+                                </div>
+                            </div>
+                            <div class="inscrever">
+                                <div class="plusbutton"><a href="/inscricao">
+                                        <img src="/img/plus.png" alt="">
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="attractionsSection">
+                <div class="circles">
+                    <div class="ball" id="ballUm">
+                        <div class="um">
+                            <img src="/img/tomorrowland.png" alt="">
+                            <span class="tooltiptext">Explore um mundo futurista em Tomorrowland, no Magic Kingdom! Com
+                                sua arquitetura moderna e atmosfera empolgante, esta área oferece aventuras emocionantes
+                                e visões do futuro. Experimente a Space Mountain, pilote foguetes na Astro Orbiter e
+                                conheça robôs na Tomorrowland Transit Authority PeopleMover. </span>
+                        </div>
+                    </div>
+                    <div class="ball" id="ballDois">
+                        <div class="dois">
+                            <img src="/img/mermaid.png" alt="">
+                            <span class="tooltiptext">Embarque em uma jornada subaquática com a Under the Sea - Journey
+                                of the Little Mermaid! Nesta atração encantadora do Magic Kingdom, você se junta à
+                                sereia Ariel em uma emocionante aventura pelo oceano. Reviva momentos do clássico "A
+                                Pequena Sereia", mergulhando em cenários deslumbrantes e canções inesquecíveis. </span>
+                        </div>
+                    </div>
+                    <div class="ball" id="ballTres">
+                        <div class="tres">
+                            <img src="/img/tower.png" alt="">
+                            <span class="tooltiptext">A Hollywood Tower Hotel - Tower of Terror, localizada no Disney's
+                                Hollywood Studios, oferece uma experiência emocionante e assustadora. Entre em um
+                                elevador que desafia a gravidade e mergulhe em uma queda livre cheia de surpresas e
+                                reviravoltas. Com efeitos especiais incríveis e uma atmosfera sinistra, é uma atração
+                                imperdível para os amantes de adrenalina e mistério.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="quadrado">
+                        <div class="qUm">
+                            <div class="nome">
+                                <h1>Tomorrow Land</h1>
+                            </div>
+                            <div class="location">
+                                <div class="iconL">
+                                    <div class="containerlocation">
+                                        <img src="/img/location.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="locationh1">
+                                    <h1>tomorrowland, Disneyland Park</h1>
+                                </div>
+                            </div>
+                            <div class="inscrever">
+                                <Div class="plusbutton"><a href="/inscricao">
+                                        <img src="/img/plus.png" alt="">
+                                    </a></Div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quadrado2">
+                        <div class="qDois">
+                            <div class="nome">
+                                <h1>Under The Sea</h1>
+                            </div>
+                            <div class="location">
+                                <div class="iconL">
+                                    <div class="containerlocation">
+                                        <img src="/img/location.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="locationh1" id="correcao">
+                                    <h1>Under the Sea - Journey of The Little Mermaid, Fantasyland, Magic Kingdom</h1>
+                                </div>
+                            </div>
+                            <div class="inscrever">
+                                <div class="plusbutton"><a href="/inscricao">
+                                        <img src="/img/plus.png" alt="">
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quadrado3">
+                        <div class="qTres">
+                            <div class="nome">
+                                <h1>Hollywood Tower</h1>
+                            </div>
+                            <div class="location">
+                                <div class="iconL">
+                                    <div class="containerlocation">
+                                        <img src="/img/location.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="locationh1" id="correcao">
+                                    <h1>The Twilight Zone Tower of Terror, Sunset Boulevard, Disney's Hollywood Studios
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="inscrever">
+                                <div class="plusbutton"><a href="/inscricao">
+                                        <img src="/img/plus.png" alt="">
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>{{!-- whitebox fechamento --}}
+    </section>
+
+    <script>
+        let count = 1;
+        document.getElementById("radio1").checked = true;
+
+        setInterval(function () {
+            nextImage();
+        }, 2500);
+
+        function nextImage() {
+            count++;
+            if (count > 4) {
+                count = 1;
+            }
+
+            document.getElementById("radio" + count).checked = true;
+
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const plusButtons = document.querySelectorAll('.plusbutton a');
+            plusButtons.forEach(function (plusButton) {
+                plusButton.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    console.log("Botão de plus clicado");
+
+                    // Encontrar o elemento .nome mais próximo
+                    const nomeElement = this.closest('.inscrever').parentNode.querySelector('.nome h1');
+                    if (nomeElement) {
+                        const atracao = nomeElement.textContent;
+                        localStorage.setItem('atracao', atracao);
+                        window.location.href = "/inscricao";
+                    } else {
+                        console.error("Elemento '.nome h1' não encontrado para o botão clicado.");
+                    }
+                });
+            });
+        });
+
+
+
+
+        plusButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            console.log("Botão de plus clicado");
+            const atracao = document.querySelector('.nome h1').textContent;
+            localStorage.setItem('atracao', atracao);
+        });
+
+    </script>
+
 </body>
+
 </html>

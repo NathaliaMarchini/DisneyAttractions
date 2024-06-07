@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Cutive+Mono&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Cutive+Mono&family=Sintony:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/listainscricoes.css">
+    <title>Inscrições</title>
+</head>
+
+<body>
+
+    <section class="conteudo">
+        <div class="nave">
+            <div class="cont">
+                <div class="one">
+                    <a href="/">
+                        <img src="/img/homeImg.png" alt="">
+                    </a>
+                    <a href="/attractions" id="AAtt">Attractions</a>
+                </div>
+                <div class="two">
+
+                </div>
+                <div class="three">
+                    <div class="image">
+                        <a href="/perfil"><img src="/img/mickeyIcon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="palavra">
+        <h1>SUAS INSCRIÇÕES</h1>
+    </div>
+
+
+    <section class="caixa">
+        <div class="WhiteCaixa">
+            {{!-- each vem aqui --}}
+
+            {{#each listaInscricoes}}
+            <div class="containerticket">
+                <div class="ticketC">
+                    <div class="bluePart"></div>
+                    <div class="linha"></div>
+                    <div class="whitePart">
+                        <div class="titles">
+                            <div class="tituloClaro">
+                                <h1>Event ticket disney</h1>
+                            </div>
+                            <div class="tituloEscuro">
+                                <h1>Disney attractions</h1>
+                            </div>
+                        </div>
+                        <div class="dateInfo">
+                            <div class="dataF">
+                                <h1>date:</h1>
+                            </div>
+                            <div class="data">
+                                <h1>{{this.data}}</h1>
+                            </div>
+                        </div>
+                        <div class="twoDivs">
+                            <div class="disneyT">
+                                <div class="Frase">
+                                    <h1>Disneyland park</h1>
+                                </div>
+                                <div class="id">
+                                    <h1>{{this.id}}</h1>
+                                </div>
+                            </div>
+                            <div class="hora">
+                                <div class="hourF">
+                                    <h1>Time:</h1>
+                                </div>
+                                <div class="hour">
+                                    <h1>{{this.horario}}</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meio"></div>
+                <div class="fim">
+                    <div class="umFr">
+                        <h1>Attraction</h1>
+                    </div>
+                    <div class="twoLines">
+                        <h1>{{this.atracao}}</h1>
+                    </div>
+                    <div class="codeBar">
+                        <img src="/img/barCode.png" alt="">
+                    </div>
+                    <div class="numbers">
+                        <div class="numb">
+                            <h1 class="N">023548965487</h1>
+                        </div>
+                        <div class="numbText">
+                            <h1>ticket number</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="botaoDetalhes">
+                <button><a href="/inscricao/{{this.id}}">See details</a></button>
+            </div>
+            <div class="linhaDivisória">
+                <hr>
+            </div>
+
+            {{/each}}
+            {{!-- e fecha aqui --}}
+        </div>
+    </section>
+
+
+</body>
+
+</html>

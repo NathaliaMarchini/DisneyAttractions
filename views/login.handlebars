@@ -11,15 +11,15 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/login.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/login.css">
+
 </head>
 
 <body>
     <section class="container2">
-        <div class="triangle left"></div>
 
         <div class="volt">
             <div class="um">
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="part3">
                         <div class="line"></div>
                         <div class="between">
@@ -56,12 +56,29 @@
                     </div>
 
                     <div class="part4">
+                        <div class="input1">
+                            <input type="text" placeholder="nome completo" id="nome-completo" />
+                        </div>
+                        <div class="input2">
+                            <input type="text" placeholder="telefone" id="telefone">
+                        </div>
+                        <div class="input3">
+                            <input type="text" placeholder="email" id="email">
+                        </div>
+                        <div class="input4">
+                            <input type="password" placeholder="senha" id="senha">
+                        </div>
 
+                        <div class="botao">
+                            <button type="submit" id="enviar-btn">Cadastrar</button>
+                        </div>
                     </div>
 
                     <div class="part5">
                         <div class="quadrado">
-                            <div class="Q"></div>
+                            <div class="Q">
+                                <input type="checkbox" name="concordo" id="concordo">
+                            </div>
                         </div>
                         <div class="diretrizesF">
                             <h1>ACEITO AS DIRETRIZES INFORMADAS</h1>
@@ -76,6 +93,38 @@
         </div>
     </section>
 
+    <script>
+        document.getElementById('enviar-btn').addEventListener('click', () => {
+            // Verifica se todos os campos estão preenchidos
+            const nomeCompleto = document.getElementById('nome-completo').value;
+            const telefone = document.getElementById('telefone').value;
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('senha').value;
+
+            if (!nomeCompleto || !telefone || !email || !senha) {
+                // Exibe um alerta informando para preencher todos os campos
+                alert('Por favor, preencha todos os campos.');
+            } else if (!document.getElementById('concordo').checked) {
+                // Exibe um alerta informando para marcar o checkbox
+                alert('Você precisa concordar com as diretrizes antes de prosseguir.');
+            } else {
+                alert('Cadastro realizado com sucesso!');
+
+                // Armazena os dados no localStorage
+                localStorage.setItem('nomeCompleto', nomeCompleto);
+                localStorage.setItem('telefone', telefone);
+                localStorage.setItem('email', email);
+
+                // Redireciona o usuário para a página de perfil após alguns segundos
+                setTimeout(() => {
+                    window.location.href = '/perfil';
+                }, 1000); // Redireciona após 1 segundo (1000 milissegundos)
+            }
+        });
+    </script>
+
 </body>
+
+
 
 </html>

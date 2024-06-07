@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Comfortaa:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Comfortaa:wght@300..700&family=Commissioner:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Coda:wght@400;800&family=Comfortaa:wght@300..700&family=Commissioner:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/detalhes.css">
+    <title>Detalhes Inscrição</title>
+</head>
+
+<body>
+
+    <div class="conteudoo">
+
+        <div class="arrow">
+            <div class="arrowImg">
+                <a href="/listaInsc"><img src="/img/seta.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="titulo">
+            <h1>DETALHES</h1>
+        </div>
+
+        <div class="boxSection">
+            <div class="Box">
+                <div class="ladoUm">
+                    <div class="frase">
+                        <h1>Oop’s! deseja mudar alguma coisa?</h1>
+                    </div>
+                    <div class="atracaoName">
+                        <div class="text">
+                            <h1>Atração:</h1>
+                        </div>
+                        <div class="info">
+                            <div class="boxzinha">
+                                <h1>{{detalhes.atracao}}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ladoDois">
+                    <div class="parteCima">
+                        <div class="data">
+                            <div class="bolinha">
+                                <div class="ball"></div>
+                            </div>
+                            <div class="name">
+                                <h1 id="data">Data:</h1>
+                            </div>
+                            <div class="retangulo">
+                                <div class="ret">
+                                    {{detalhes.data}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horario">
+                            <div class="bolinha">
+                                <div class="ball"></div>
+                            </div>
+                            <div class="name">
+                                <h1>Horário:</h1>
+                            </div>
+                            <div class="retangulo">
+                                <div class="ret" id="retWhite">
+                                    {{detalhes.horario}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parteBaixo">
+                        <h1>Lembre-se sempre de verificar se as informações estão corretas para evitar problemas no
+                            grande dia! ;)</h1>
+                    </div>
+                </div>
+            </div>
+        </div>{{!-- /boxSection --}}
+
+        <div class="botoesSection">
+            <div class="three">
+                <div class="editar">
+                    <a href="/detalhes/edit/{{detalhes.id}}" class="btn btn-info btn-warning mt-3">Editar</a>
+                </div>
+                <div class="excluir">
+                    <form action="/detalhes/removerInscricao/{{detalhes.id}}" method="post">
+                        <input type="submit" value="Remover" class="btn btn-light border-warning">
+                    </form>
+                </div>
+                <div class="voltar">
+                    <a href="/listaInsc">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

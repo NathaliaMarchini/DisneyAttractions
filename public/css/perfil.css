@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.corpo {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+
+.lado1 {
+    width: 35%;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #B4CFD4;
+    border-right: 0.1vw solid #0F6477;
+}
+
+.lado2 {
+    width: 65%;
+    height: 50vw;
+}
+
+.boxC {
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.box-ret {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* Adiciona um contexto de posicionamento relativo */
+}
+
+.box {
+    width: 80%;
+    height: 95%;
+    background-color: white;
+    border-radius: 1.0416666666666667vw;
+    border: 0.1vw solid #0F6477;
+}
+
+.borderC {
+    width: 10vw;
+    height: 10vw;
+    border: 0.1vw solid #0F6477;
+    border-radius: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vw;
+    position: absolute;
+    /* Adiciona posicionamento absoluto */
+    z-index: 1;
+    /* Garante que a div fique sobreposta à .box-ret */
+}
+
+.circle {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 20vw;
+    background-color: #D9D9D9;
+    display: flex;
+}
+
+.circle img{
+    width: 100%;
+    height: 100%;
+}
+
+.nomePerfil {
+    width: 100%;
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nomePerfil h1 {
+    margin-top: 5vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #0F6477;
+    font-size: 1.7vw;
+}
+
+.line {
+    width: 100%;
+    height: 2vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.L {
+    width: 80%;
+    height: 0.1vw;
+    background-color: #0F6477;
+}
+
+.Info {
+    width: 100%;
+    height: 22vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.ball {
+    width: 25%;
+    height: 100%;
+}
+
+.ballD {
+    width: 25%;
+    height: 100%;
+}
+
+.ballT {
+    width: 25%;
+    height: 100%;
+}
+
+.ball,
+.ballD,
+.ballT {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.circleB {
+    width: 3vw;
+    height: 3vw;
+    border: 0.1vw solid #0F6477;
+    border-radius: 10vw;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.circleB img{
+    width: 60%;
+    height: 60%;
+}
+
+
+
+.um,
+.dois,
+.tres {
+    flex: 1;
+    display: flex;
+}
+
+.legenda {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.legenda h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #717171;
+    font-size: 1.4vw;
+    margin-left: 0.5vw;
+}
+#h1Email h1{
+    word-break: break-all;
+}
+
+.last {
+    width: 100%;
+    height: 6vw;
+    display: flex;
+}
+
+.last button {
+    width: 6vw;
+    height: 2vw;
+    background-color: white;
+    border-radius: 0.5208333333333334vw;
+    border: 0.1vw solid #0F6477;
+    margin-left: 70%;
+    margin-top: 3vw;
+}
+
+
+#text {
+    color: #0B4856;
+    font-size: 1vw;
+}
+
+.lado2 {
+    background-color: #08748C;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto {
+    width: 100%;
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto h1 {
+    color: white;
+    font-size: 2.5vw;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.imgS {
+    width: 100%;
+    height: 15vw;
+    display: flex;
+}
+
+
+
+.U,
+.D,
+.T {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.boxM {
+    width: 78%;
+    height: 100%;
+    background-color: #B4CFD4;
+    border-radius: 0.5208333333333334vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#ajuste1{
+    margin-left: 5vw;
+}
+
+#ajuste2{
+    margin-right: 5vw;
+}
+.botao {
+    height: 15%;
+    display: flex;
+}
+
+.arrowB {
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 10vw;
+    background-color: white;
+    margin-left: 86%;
+    margin-top: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whiteP {
+    width: 90%;
+    height: 82%;
+    background-color: white;
+    margin-left: 5%;
+    border-radius: 1.0416666666666667vw;
+    display: flex;
+}
+
+.whiteP img{
+    width: 100%;
+    height: 100%;
+}
+
+.whiteL {
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha {
+    width: 80%;
+    height: 0.1vw;
+    background-color: white;
+}
+
+.op {
+    width: 100%;
+    height: 3vw;
+    display: flex;
+}
+
+.legen {
+    width: 6vw;
+    height: 2vw;
+    margin-left: 4.5vw;
+}
+
+.legen h1{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.875vw;
+    color: white;
+}
+
+.icon {
+    width: 2vw;
+    height: 2vw;
+    margin-left: 0.3vw;
+    display: flex;
+    margin-top: 0.3vw;
+}
+
+.icon img{
+    
+    width: 100%;
+    height: 100%;
+}
+
+.four {
+    width: 100%;
+    height: 10vw;
+    display: flex;
+}
+
+.part1 {
+}
+
+.part1,
+.part2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.excluir,
+.atualizar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 16.25vw;
+    height: 2.7083333333333335vw;
+    border-radius: 0.5208333333333334vw;
+    border: 0.1vw solid black;
+    display: flex;
+}
+
+.Icoon {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Icoon img{
+    width: 50%;
+    height: 90%;
+
+}
+.textoo {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.textoo h1{
+
+}
+
+.textoo a{
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 1.4vw;
+    margin-left: 0.5vw;
+}
+
+#blueClaro {
+    background-color: rgba(180, 207, 212, 0.50);
+}
+
+#blueEscuro {
+    background-color: rgba(100, 88, 189, 0.50);
+}
+
+.five {
+    width: 100%;
+    height: 3vw;
+}
+
+.five h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.875vw;
+    color: white;
+    margin-left: 4.6vw;
+}
+
+.rodape {
+    width: 100%;
+    height: 4.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contatos,
+.sair {
+    flex: 1;
+    display: flex;
+}
+
+.emailcontato {
+    width: 90%;
+}
+
+.emailcontato h1{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6666666666666667vw;
+    color: white;
+    margin-left: 1vw;
+}
+
+.emailIcon {
+    width: 9%;
+    height: 100%;
+    margin-left: 5.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.emailIcon img{
+    margin-left: 1vw;
+    width: 40%;
+    height: 70%;
+}
+
+.instaIcon {
+    width: 9%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5.5vw;
+
+    margin-top: 0.5vw;
+}
+
+.instaIcon img{
+    width: 50%;
+    height: 80%;
+    margin-left: 1vw; 
+}
+
+
+.instagramEmail {
+    width: 90%;
+}
+
+.instagramEmail h1{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6666666666666667vw;
+    color: white;
+    margin-top: 0.8vw;
+    margin-left: 1vw;
+}
+
+.fim {
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+}
+
+.sairButton {
+    width: 7vw;
+    height: 2.0833333333333335vw;
+    background-color: white;
+    border-radius: 1.0416666666666667vw;
+    margin-left: 87%;
+    display: flex;
+}
+
+
+.arrow, .S{
+    flex: 1;
+}
+
+.arrow img{
+    margin-left: 1vw;
+    width: 60%;
+    height: 100%;
+}
+.S{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.S h1{
+    margin-right: 1vw;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.S a{
+    text-decoration: none;
+    color: black;
+}

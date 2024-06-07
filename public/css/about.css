@@ -1,0 +1,240 @@
+* {
+    background-color: #08748C;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Adiciona box-sizing para mais controle sobre margens e padding */
+}
+
+.conteudo {
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.whiteLine {
+    width: 100%;
+    height: 4vw;
+    border-bottom: 0.6vw solid white;
+    display: flex;
+    align-items: center;
+    /* Alinha os itens verticalmente no centro */
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    /* Alinha os itens horizontalmente no centro */
+    align-items: center;
+    /* Alinha os itens verticalmente no centro */
+    width: 10%;
+    height: 100%;
+
+}
+
+.text a {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    /* Adiciona cor ao texto do link */
+    display: flex;
+    justify-content: center;
+    /* Alinha o conteúdo horizontalmente */
+    align-items: center;
+    /* Alinha o conteúdo verticalmente */
+    height: 100%;
+    /* Garante que o link tenha 100% da altura do contêiner pai */
+}
+
+.text a img {
+    height: 100%;
+    background-color: transparent;
+}
+
+.conteudo2 {
+    width: 100%;
+    height: 18%;
+    display: flex;
+    position: relative;
+    background-color: orange;
+}
+
+.dois {
+    background-color: green;
+}
+
+.um {
+    width: 33.3%;
+    display: flex;
+}
+
+.dois {
+    width: 33.3%;
+    display: flex;
+    background-color: pink;
+}
+
+.tres {
+    width: 33.3%;
+    display: flex;
+}
+
+#D {
+    height: 14.2vw;
+}
+
+.um {
+    background-color: purple;
+}
+
+.um,
+.tres {
+    display: flex;
+}
+
+
+.suspender,
+.suspender2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+
+
+.corda {
+    height: 100%;
+    width: 0.5vw;
+    background-color: white;
+    box-shadow: 0.9vw 0.01vw rgba(15, 100, 119, 0.65);
+}
+
+.conteudo3 {
+    width: 100%;
+    height: 60%;
+    background-color: pink;
+    display: flex;
+
+}
+
+#cordaUm {
+    margin-left: 3vw;
+}
+
+#cordaDois {
+    margin-right: 3vw;
+}
+
+#cordaUmM {
+    margin-left: 3vw;
+}
+
+#cordaDoisM {
+    margin-right: 3vw;
+}
+
+
+
+.box,
+.box1,
+.box2 {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.white {
+    width: 68%;
+    height: 85%;
+    border-top-left-radius: 1.5vw;
+    border-top-right-radius: 1.5vw;
+    border: 0.3vw solid white;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2vw 2vw rgba(15, 100, 119, 0.65);
+}
+
+#whiteB {
+    margin-top: 15.5%;
+    z-index: 1;
+}
+
+.one {
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.one h1 {
+    font-size: 2vw;
+    color: white;
+    background-color: transparent;
+}
+
+
+.two {
+    height: 80%;
+    background-color: transparent;
+    border: 0.2vw solid white;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3vw;
+}
+
+.two p {
+    max-width: 20vw;
+    background-color: transparent;
+}
+
+.conteudo4 {
+    width: 100%;
+    height: 5vw;
+    background-color: bisque;
+    display: flex;
+}
+
+
+.boxLine{
+    width: 40%;
+    height: 100%;
+    background-color: orange;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.figurinha{
+    width: 20%;
+    height: 100%;
+    background-color: gray;
+}
+
+.boxLine2{
+    width: 40%;
+    height: 100%;
+    background-color: purple;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+hr{
+    width: 80%;
+    background-color: white;
+    height: 0.3vw;
+}
+
+.figurinha img{
+    width: 100%;
+    height: 100%;
+}
+

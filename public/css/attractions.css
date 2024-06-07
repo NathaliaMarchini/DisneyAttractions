@@ -1,0 +1,674 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #08748C;
+}
+
+.conteudo {
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.nave {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nave,
+.frase {
+    flex: 1;
+}
+
+.cont {
+    border-radius: 1vw;
+    width: 92%;
+    height: 85%;
+    background-color: white;
+    display: flex;
+}
+
+.one {
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.one img{
+    background-color: transparent;
+    margin-left: 3vw;
+    width: 2vw;
+}
+.one a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #043E4B;
+}
+
+#LIIN{
+    font-size: 1.5vw;
+    font-family: "Convergence", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 3.5vw;
+}
+
+.two {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.two input {
+    width: 45%;
+    height: 60%;
+    background-color: transparent;
+    color: transparent;
+    border-radius: 1.3vw;
+    border: 0.2vw solid #043E4B;
+    padding-left: 1.5vw;
+    color: #080808;
+    margin-left: 20vw;
+    font-size: 1.1vw;
+}
+
+.three {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 32%;
+    height: 78%;
+    background-color: transparent;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    margin-top: 0.1vw;
+}
+
+.image a{
+    background-color: transparent;
+}
+
+.frase {
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fcont {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fcont h1 {
+    background-color: transparent;
+    color: white;
+    font-size: 2.2vw;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 3vw;
+}
+
+.conteudoDois {
+    width: 100%;
+    height: 260vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WhiteBox {
+    width: 92%;
+    height: 97%;
+    background-color: transparent;
+    border: 0.1vw solid white;
+
+}
+
+.part1 {
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.part1 h1 {
+
+    margin-top: 10vw;
+    color: white;
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6vw;
+}
+
+.slider {
+
+    width: 80vw;
+    height: 30vw;
+    background-color: white;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 30vw;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 80vw;
+    height: 100%;
+    background-color: transparent;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 80vw;
+    margin-top: -3vw;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.manual-btn{
+    border: 0.1vw solid white;
+    padding: 0.4vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 1vw;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 0.1vw solid white;
+    padding: 0.4vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: 1s;
+    background-color: transparent;
+    transform: scale(1); /* Definir a escala inicial */
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 80vw;
+    margin-top: 27vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:hover,
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
+#radio3:checked ~ .navigation-auto .auto-btn3,
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+
+    transform: scale(1.3); /* Aumentar a escala quando selecionado ou ao passar o mouse */
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 1vw;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+    
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+
+
+.carrousel2 img{
+    background-color: white;
+}
+.part2 {
+    margin-top: 10vw;
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4.5vw;
+}
+
+.attractionsSection {
+    width: 100%;
+    height: 34vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8vw;
+}
+
+.circles {
+    height: 30%;
+    display: flex;
+
+}
+
+
+
+.ball {
+    flex: 1;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+
+.um {
+    width: 13.5vw;
+    height: 13.5vw;
+    border-radius: 100vw;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(174, 173, 173, 1);
+    border: 0.20833333333333334vw solid white;
+    position: relative; /* Necessário para a posição do tooltip */
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 15vw;
+    background-color: #103f5c;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.416vw;
+    padding: 0.833vw;
+    position: absolute;
+    z-index: 1;
+    bottom: 15.625vw; /* Coloca o tooltip acima da imagem */
+    left: 50%;
+    margin-left: -7.5vw;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    /* Estilos adicionais para melhorar a aparência */
+    font-family: Arial, sans-serif;
+    font-size: 0.8vw;
+    font-weight: bold;
+    border: 0.1vw solid #ddd;
+}
+
+.um:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dois:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tres:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dois {
+    width: 13.5vw;
+    height: 13.5vw;
+    border-radius: 100vw;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(174, 173, 173, 1);
+    border: 0.20833333333333334vw solid white;
+}
+
+.tres {
+    width: 13.5vw;
+    height: 13.5vw;
+    border-radius: 100vw;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(174, 173, 173, 1);
+    border: 0.20833333333333334vw solid white;
+}
+
+
+.box {
+    height: 70%;
+    width: 100%;
+    display: flex;
+}
+
+
+
+.quadrado,
+.quadrado2,
+.quadrado3 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.um,
+.dois,
+.tres {
+    margin-top: 2vw;
+    position: absolute;
+    z-index: 10;
+}
+
+
+
+.qUm,
+.qDois,
+.qTres {
+    width: 22vw;
+    height: 24vw;
+    background-color: white;
+    border-radius: 1.5625vw;
+    position: relative;
+    box-shadow: 0.4vw 0.4vw 6px rgba(16, 93, 111, 1);
+
+}
+
+
+.um img {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.dois img {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.tres img {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+
+.nome {
+    width: 100%;
+    height: 12vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome h1 {
+    margin-top: 4vw;
+    background-color: transparent;
+    width: 9.5vw;
+    text-align: center;
+    font-size: 1.1vw;
+    color: #3F6269;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.location {
+    width: 100%;
+    height: 6vw;
+    display: flex;
+    background-color: transparent;
+}
+
+.location img {
+    background-color: transparent;
+}
+
+.iconL {
+    width: 16%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationh1 {
+    width: 84%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.locationh1 h1 {
+    background-color: transparent;
+    color: #939393;
+    font-size: 0.8vw;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.inscrever {
+    width: 100%;
+    height: 6vw;
+    background-color: transparent;
+    display: flex;
+}
+
+.plusbutton {
+    width: 3.125vw;
+    height: 3.125vw;
+    border-radius: 2.6041666666666665vw;
+    background-color: white;
+    margin-left: 80%;
+    margin-top: 1.5vw;
+    box-shadow: 0px 4px 6px rgba(174, 173, 173, 1);
+    display: flex;
+
+}
+
+.plusbutton img {
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+}
+
+.plusbutton a {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoSection {
+    width: 100%;
+    height: 30vw;
+    margin-top: -3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6vw;
+}
+
+.ret {
+    width: 51.041666666666664vw;
+    height: 29.375vw;
+    background-color: white;
+    display: flex;
+    box-shadow: 2vw 2vw rgba(15, 100, 119, 1);
+}
+
+.photo {
+    justify-content: end;
+    background-image: url(/img/waltimage.png);
+    background-size: cover;
+    /* para garantir que a imagem cubra toda a div */
+
+}
+
+.photo,
+.texts {
+    flex: 1;
+    display: flex;
+}
+
+.texts {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.retzinho {
+    width: 17.239583333333332vw;
+    height: 4.166666666666667vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+}
+
+.retzinho h1 {
+    background-color: transparent;
+    font-size: 1.875vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.retzinho2 {
+    width: 17.239583333333332vw;
+    height: 4.166666666666667vw;
+    background-color: #08748C;
+    margin-top: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56.3%;
+}
+
+.retzinho2 h1 {
+    background-color: transparent;
+    font-size: 1.875vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.legendaas {
+    width: 100%;
+    height: 6vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.Legen {
+    width: 100%;
+    height: 2vw;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.Legen h1 {
+    background-color: transparent;
+    margin-left: 42%;
+    font-size: 1.0416666666666667vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.legen {
+    width: 100%;
+    height: 3vw;
+    background-color: transparent;
+}
+
+.legen h1 {
+    background-color: transparent;
+    font-size: 0.78125vw;
+    width: 9vw;
+    margin-left: 42%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.containerlocation {
+    width: 1.8vw;
+    height: 2.2vw;
+    background-color: transparent;
+}
+
+.containerlocation img {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}

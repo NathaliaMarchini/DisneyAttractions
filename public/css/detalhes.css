@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding-left: 0;
+    background-color: #08748C;
+}
+
+
+.conteudoo {
+    width: 100%;
+    height: 48vw;
+    margin-bottom: 10vw;
+}
+
+.arrow {
+    width: 100%;
+    height: 3vw;
+    display: flex;
+}
+
+.arrowImg{
+    margin-left: 3vw;
+    width: 3%;
+    height: 100%;
+    margin-top: 0.5vw;
+}
+
+.arrowImg a{
+    background-color: transparent;
+}
+
+.arrowImg img{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.titulo {
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1 {
+    background-color: transparent;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vw;
+}
+
+.boxSection {
+    width: 100%;
+    height: 42vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box {
+    width: 70vw;
+    height: 42vw;
+    background-color: white;
+    display: flex;
+   
+}
+
+.Box{
+    box-shadow: 0.5vw 0.5vw  rgba(15, 100, 119, 1) ;
+    z-index: 1;
+}
+
+.three{
+    z-index: 2;
+    
+}
+
+.ladoUm {
+    background-color: #0F6477;
+    display: flex;
+    flex-direction: column;
+    border-top: 0.1vw solid white;
+    border-left: 0.1vw solid white;
+    
+}
+
+.ladoUm{
+    box-shadow: 0.3vw 0.1vw 0.2vw rgb(196, 196, 196);
+    z-index: 3;
+}
+
+.text {
+    width: 100%;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.text h1 {
+    margin-top: 10%;
+    background-color: transparent;
+    font-size: 1.875vw;
+    color: #3F6269;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.ladoUm,
+.ladoDois {
+    flex: 1;
+}
+
+
+.frase {
+    width: 100%;
+    height: 35%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase h1 {
+    background-color: transparent;
+    color: white;
+    font-size: 2.0833333333333335vw;
+    width: 25vw;
+    text-align: center;
+    text-shadow: 0.2vw 0.2vw 0.1vw rgba(15, 78, 92, 1);
+    font-family: "Coda", system-ui;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.atracaoName {
+    width: 100%;
+    height: 65%;
+    background-color: white;
+    border-top-left-radius: 4.6875vw;
+    border-top-right-radius: 4.6875vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.frase,
+.atracaoName {
+    display: flex;
+}
+
+
+.boxzinha {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0vw 0.2vw 0.2vw rgba(143, 143, 143, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxzinha h1 {
+    background-color: transparent;
+    width: 20vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    word-break: break-all;
+    /* quebra a linha quando a frase for maior que o tamanho da largura */
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #8F8F8F;
+    font-size: 1.8vw;
+    align-items: center;
+}
+
+
+.info {
+    width: 100%;
+    height: 14vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+
+.ladoDois {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+.parteCima {
+    width: 100%;
+    height: 45%;
+    background-color: transparent;
+}
+
+
+.parteBaixo {
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parteBaixo h1 {
+    background-color: transparent;
+    font-size: 1.0416666666666667vw;
+    color: #8F8F8F;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    width: 28.5vw;
+}
+
+.data {
+    width: 100%;
+    height: 30%;
+    margin-top: 4vw;
+    display: flex;
+    background-color: transparent;
+}
+
+.horario {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    background-color: transparent;
+}
+
+.bolinha {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: transparent;
+}
+
+.name {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.name h1 {
+    color: #3F6269;
+    font-size: 1.875vw;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: transparent;
+}
+
+#data{
+    margin-right: 3vw;
+}
+
+.retangulo {
+    width: 55%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.ret {
+    width: 11.927083333333334vw;
+    height: 3.0729166666666665vw;
+    background-color: #B4CFD4;
+    margin-left: 1vw;
+    box-shadow: 0vw 0.2vw 0.2vw rgba(143, 143, 143, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: "Comfortaa";
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+}
+
+#retWhite {
+    background-color: white;
+    box-shadow: 0vw 0.2vw 0.2vw rgba(143, 143, 143, 1);
+    color: #0F6477;
+}
+
+.box {
+    width: 80%;
+    height: 30vw;
+    background-color: pink;
+}
+
+.ball {
+    width: 21%;
+    height: 20%;
+    background-color: white;
+    border-radius: 20vw;
+    background-color: #B4CFD4;
+}
+
+.botoesSection {
+    position: relative;
+    width: 100%;
+    height: 10vw;
+
+    display: flex;
+    justify-content: center;
+}
+
+.three {
+    width: 46vw;
+    height: 5.8vw;
+    background-color: white;
+    display: flex;
+    margin-top: -3vw;
+}
+
+.excluir {
+    box-shadow: 0vw 0.2vw 0.2vw rgba(143, 143, 143, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.excluir form {
+    background-color: transparent;
+}
+
+.excluir input {
+    background-color: transparent;
+    border: none;
+    font-size: 1.25vw;
+    font-family: "Commissioner", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "FLAR" 0,
+        "VOLM" 0;
+}
+
+.editar,
+.excluir,
+.voltar {
+    flex: 1;
+    background-color: white;
+}
+
+.editar {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0vw 0.2vw 0.2vw rgba(143, 143, 143, 1);
+}
+
+.editar:hover, .excluir:hover, .voltar:hover{
+    background-color: #B4CFD4;
+}
+
+.editar a {
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1.25vw;
+    font-family: "Commissioner", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "FLAR" 0,
+        "VOLM" 0;
+    color: black;
+}
+
+.voltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0vw 0.2vw 0.2vw rgba(143, 143, 143, 1);
+}
+
+.voltar a {
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1.25vw;
+    font-family: "Commissioner", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "FLAR" 0,
+        "VOLM" 0;
+    color: black;
+}

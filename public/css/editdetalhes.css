@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #08748C;
+}
+
+.conteudo {
+    width: 100%;
+    height: 6vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.nave {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nave{
+    height: 72%;
+}
+
+.cont {
+    border-radius: 1vw;
+    width: 92%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+}
+
+.one {
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.one img{
+    background-color: transparent;
+    margin-left: 3vw;
+    width: 2vw;
+}
+.one a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #043E4B;
+}
+
+.two {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+}
+
+input{
+    padding-left: 2vw;
+}
+
+.two input {
+    width: 90%;
+    height: 50%;
+    background-color: transparent;
+    color: transparent;
+    border-radius: 1.3vw;
+    border: 0.2vw solid #043E4B;
+    padding-left: 1.5vw;
+    color: #080808;
+}
+
+.three {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 32%;
+    height: 78%;
+    background-color: transparent;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    margin-top: 0.1vw;
+}
+
+.image a{
+    background-color: transparent;
+}
+
+.frase {
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fcont {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fcont h1 {
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+    font-size: 2.2vw;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 3vw;
+}
+
+.segunda{
+    width: 100%;
+    height: 44vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box{
+    width: 75vw;
+    height: 42vw;
+    border-radius: 1.5625vw;
+    background-color: white;
+    display: flex;
+}
+
+.ladoBlue{
+    background-color: #DAE8EB;
+    border-top-right-radius: 1.5625vw;
+    border-bottom-right-radius: 1.5625vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.ladoWhite{
+    background-color: transparent;
+    border-top-left-radius: 1.5625vw;
+    border-bottom-left-radius: 1.5625vw;
+    display: flex;
+    flex-direction: column;
+}
+.ladoBlue, .ladoWhite{
+    flex: 1;
+}
+
+.formulario{
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario form{
+    width: 80%;
+    background-color: transparent;
+    margin-top: 8vw;
+}
+
+.botoes{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    background-color: transparent;
+    margin-top: 3vw;
+}
+
+.botoes button:hover {
+    transform: scale(1.1); /* Aumenta a escala em 10% */
+}
+
+.botaoInscrever, .botaoLimpar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: transparent;
+}
+
+.botaoInscrever button{
+    width: 7.5vw;
+    height: 2.5520833333333335vw;
+    background-color: #18608C;
+    border: none;
+    border-radius: 2.0833333333333335vw;
+    color: white;
+    font-size: 1.0416666666666667vw;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0vw 0.3vw 0.2vw rgba(133, 133, 133, 0.5);
+    text-shadow: 2px 2px 4px rgba(66, 66, 66, 0.5);
+}
+
+.botaoLimpar button{
+    width: 7.5vw;
+    height: 2.5520833333333335vw;
+    background-color: white;
+    border: none;
+    border-radius: 2.0833333333333335vw;
+    color: #565656;
+    font-size: 1.0416666666666667vw;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0vw 0.3vw 0.2vw rgba(133, 133, 133, 0.5);
+    text-shadow: 2px 2px 4px rgba(66, 66, 66, 0.5);
+}
+
+.text{
+    width: 100%;
+    height: 40%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+
+.text h1{
+    background-color: transparent;
+    font-size: 1.6666666666666667vw;
+    color: #565656;
+    font-family: "Coda", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    text-shadow: 0vw 0.2vw 4px rgba(66, 66, 66, 0.5);
+    text-align: center;
+    width: 30vw;
+    margin-top: 20%;
+}
+
+.InfoOne{
+    display: flex;
+    flex-direction: column;
+    height: 8vw;
+    width: 100%;
+    background-color: transparent;
+
+}
+
+.InfoOne label{
+    width: 100%;
+    height: 30%;
+    background-color: transparent;
+    font-size: 1.6666666666666667vw;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    display: flex;
+}
+
+.InfoOne input{
+    width: 28vw;
+    height: 3vw;
+    background-color: white;
+    border: 0.1vw solid #808080;
+    border-radius: 2.0833333333333335vw;
+    margin-top: 5%;
+    box-shadow: 0vw 0.3vw 0.2vw rgba(133, 133, 133, 0.5);
+}
+
+
+
+.InfoTwo{
+    display: flex;
+    flex-direction: column;
+    height: 8vw;
+    width: 100%;
+    background-color: transparent;
+    
+}
+
+.InfoTwo label{
+    width: 100%;
+    height: 30%;
+    background-color: transparent;
+    font-size: 1.6666666666666667vw;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    display: flex;
+
+}
+
+.InfoTwo input{
+    width: 28vw;
+    height: 3vw;
+    background-color: white;
+    border: 0.1vw solid #808080;
+    border-radius: 2.0833333333333335vw;
+    margin-top: 5%;
+    box-shadow: 0vw 0.3vw 0.2vw rgba(133, 133, 133, 0.5);
+}
+
+.InfoThree{
+    display: flex;
+    flex-direction: column;
+    height: 8vw;
+    width: 100%;
+    background-color: transparent;
+        
+}
+
+.InfoThree label{
+    width: 100%;
+    height: 30%;
+    background-color: transparent;
+    font-size: 1.6666666666666667vw;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    display: flex;
+}
+
+.InfoThree input{
+    width: 28vw;
+    height: 3vw;
+    background-color: white;
+    border: 0.1vw solid #808080;
+    border-radius: 2.0833333333333335vw;
+    margin-top: 5%;
+    box-shadow: 0vw 0.3vw 0.2vw rgba(133, 133, 133, 0.5);
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/editdetalhes.css">
+    <title>Inscrições</title>
+</head>
+
+<body>
+
+    <section class="conteudo">
+        <div class="nave">
+            <div class="cont">
+                <div class="one">
+                    <a href="/"><img asrc="/img/homeImg.png" alt=""></a>
+                </div>
+                <div class="two">
+                    
+                </div>
+                <div class="three">
+                    <div class="image">
+                        <a href="/perfil"><img src="/img/mickeyIcon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="segunda">
+        <div class="box">
+            <div class="ladoWhite">
+                <div class="formulario">
+                    <form action="/detalhes/updateInscricao" method="post">
+                        <div class="InfoOne">
+                            <label for="Atracao">Atração:</label>
+                            <input type="text" id="Atracao" name="atracao" value="{{listaDetalhes.atracao}}">
+                        </div>
+
+                        <div class="InfoTwo">
+                            <label for="Data">Data:</label>
+                            <input type="date" id="Data" name="data" value="{{listaDetalhes.data}}">
+                        </div>
+
+                        <div class="InfoThree">
+                            <label for="Horario">Horário</label>
+                            <input type="time" id="Horario" name="horario" value="{{listaDetalhes.horario}}">
+                        </div>
+
+                        <div class="InfoFour">
+                            <label for="ID"></label>
+                            <input type="hidden" name="id" value="{{listaDetalhes.id}}" >
+                        </div>
+
+                        <div class="botoes">
+                            <div class="botaoInscrever">
+                                <button type="submit">Atualizar</button>
+                            </div>
+                            <div class="botaoLimpar">
+                                <button type="reset">Limpar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="ladoBlue">
+                <div class="text">
+                    <h1> A Aventura espera! Preencha com suas informações.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

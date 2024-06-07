@@ -1,0 +1,585 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #08748C;
+}
+
+.conteudo {
+    width: 100%;
+    height: 6vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.nave {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nave {
+    height: 72%;
+}
+
+.cont {
+    border-radius: 1vw;
+    width: 92%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+}
+
+.one {
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.one img {
+    background-color: transparent;
+    margin-left: 3vw;
+    width: 2vw;
+}
+
+.one a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #043E4B;
+}
+
+#AAtt {
+    font-size: 1.5vw;
+    font-family: "Convergence", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 3.5vw;
+}
+
+.two {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+}
+
+.two input {
+    width: 90%;
+    height: 50%;
+    background-color: transparent;
+    color: transparent;
+    border-radius: 1.3vw;
+    border: 0.2vw solid #043E4B;
+    padding-left: 1.5vw;
+    color: #080808;
+}
+
+.three {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 32%;
+    height: 78%;
+    background-color: transparent;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    margin-top: 0.1vw;
+}
+
+.image a {
+    background-color: transparent;
+}
+
+.frase {
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fcont {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fcont h1 {
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+    font-size: 2.2vw;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 3vw;
+}
+
+
+.caixa {
+    width: 100%;
+    height: 42vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WhiteCaixa {
+    width: 75vw;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+}
+.WhiteCaixa > .botaoDetalhes {
+    padding-bottom: 20px; /* Ajuste o valor conforme necessário */
+}
+
+
+
+.containerticket {
+    width: 100%;
+    height: fit-content;
+    background-color: #08748C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.80);
+}
+
+.ticketC {
+    width: 45%;
+    height: 85%;
+    background-color: white;
+    border-top-left-radius: 0.5208333333333334vw;
+    border-bottom-left-radius: 0.5208333333333334vw;
+    display: flex;
+    border: 0.1vw solid black;
+    box-shadow: 0vw 0.3vw 0.1vw rgba(0, 0, 0, 0.2);
+}
+
+.meio {
+    width: 2%;
+    height: 70%;
+}
+
+.fim {
+    width: 24%;
+    height: 85%;
+    background-color: white;
+    display: flex;
+}
+
+.bluePart {
+    width: 34%;
+    height: 100%;
+    background-color: #08748C;
+    border-top-left-radius: 0.5208333333333334vw;
+    border-bottom-left-radius: 0.5208333333333334vw;
+    background: linear-gradient(to bottom, #04869E, #B4CFD4);
+    box-shadow: 0vw 0.3vw 0.1vw rgba(0, 0, 0, 0.2);
+}
+
+.linha {
+    width: 2.5%;
+    height: 100%;
+    border-right: 0.1vw solid;
+    border-image: linear-gradient(to bottom, #04869E, #B4CFD4) 1;
+    background-color: transparent;
+    box-shadow: 0vw 0.3vw 0.1vw rgba(0, 0, 0, 0.2);
+}
+
+.whitePart {
+    width: 63.3%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0vw 0.3vw 0.1vw rgba(0, 0, 0, 0.2);
+}
+
+.titles {
+    width: 100%;
+    height: 48%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+
+}
+
+.tituloClaro {
+    background-color: white;
+}
+
+.tituloClaro h1 {
+    background-color: transparent;
+    font-size: 0.8333333333333334vw;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 1.3vw;
+    margin-top: 10%;
+}
+
+.tituloEscuro h1 {
+    background-color: transparent;
+    font-size: 1.875vw;
+    font-family: "Sintony", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 1vw;
+}
+
+.tituloClaro,
+.tituloEscuro {
+    background-color: white;
+    display: flex;
+    flex: 1;
+}
+
+.dateInfo {
+    width: 100%;
+    height: 16%;
+    background-color: white;
+    display: flex;
+}
+
+.dataF {
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    border-top: 0.1vw solid #3F6269;
+    border-right: 0.1vw solid #3F6269;
+    display: flex;
+}
+
+.dataF h1 {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: 1.0416666666666667vw;
+    font-family: "Sintony", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 1vw;
+}
+
+.data {
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-top: 0.1vw solid #3F6269;
+    align-items: center;
+}
+
+.data h1 {
+    background-color: transparent;
+    font-size: 1.0416666666666667vw;
+    font-family: "Sintony", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.twoDivs {
+    width: 100%;
+    height: 36%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.Frase {
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    border-top: 0.1vw solid #3F6269;
+    border-right: 0.1vw solid #3F6269;
+    display: flex
+}
+
+.Frase h1 {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: 1.0416666666666667vw;
+    font-family: "Sintony", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 1vw;
+}
+
+.id {
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-top: 0.1vw solid #3F6269;
+}
+
+.id h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 1.0416666666666667vw;
+    font-family: "Sintony", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+.disneyT,
+.hora {
+    flex: 1;
+    display: flex;
+}
+
+.hourF {
+    width: 65%;
+    height: 98%;
+    background-color: white;
+    border-top: 0.1vw solid #3F6269;
+    border-right: 0.1vw solid #3F6269;
+    display: flex;
+}
+
+.hourF h1 {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: 1.0416666666666667vw;
+    font-family: "Sintony", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 1vw;
+}
+
+.hour {
+    width: 35%;
+    height: 98%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-top: 0.1vw solid #3F6269;
+}
+
+.hour h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 1.0416666666666667vw;
+    font-family: "Sintony", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.meio {
+    background-color: white;
+    border-top: 0.1vw solid black;
+    border-bottom: 0.1vw solid black;
+    box-shadow: 0vw 0.3vw 0.1vw rgba(0, 0, 0, 0.2);
+}
+
+.fim {
+    border: 0.1vw solid black;
+    align-items: center;
+    box-shadow: 0vw 0.3vw 0.1vw rgba(0, 0, 0, 0.2);
+}
+
+.umFr {
+    width: 22%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0vw 0.3vw 0.1vw rgba(0, 0, 0, 0.2);
+}
+
+.umFr h1 {
+    background-color: transparent;
+    writing-mode: vertical-lr;
+    /* Rotaciona o texto para a direita */
+    transform: rotate(180deg);
+    font-size: 0.78125vw;
+    font-family: "Sintony", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 2.5vw;
+}
+
+.twoLines {
+    width: 28%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.1vw solid #3F6269;
+    border-left: 0.1vw solid #3F6269;
+
+}
+
+.twoLines h1 {
+    font-size: 0.8333333333333334vw;
+    writing-mode: vertical-rl; /* Alterado de vertical-lr para vertical-rl */
+    transform: rotate(180deg);
+    font-size: 0.78125vw;
+    background-color: transparent;
+    font-family: "Sintony", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    word-break: break-all;
+    text-align: center;
+}
+
+
+.codeBar {
+    width: 20%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 0.3vw;
+
+}
+
+.codeBar img {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.numbers {
+    width: 6%;
+    height: 75%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.numb {
+    background-color: white;
+
+}
+
+.numb h1,
+.numbText h1 {
+    background-color: transparent;
+    transform: rotate(180deg);
+    font-size: 0.4vw;
+    font-family: "Sintony", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.numb h1 {
+    margin-bottom: 2.5vw;
+}
+
+.numb,
+.numbText {
+    flex: 1;
+    writing-mode: vertical-lr;
+    /* Rotaciona o texto para a direita */
+
+}
+
+.numbText {
+    background-color: white;
+}
+
+.botaoDetalhes {
+    width: 100%;
+    height: 5%;
+    
+    display: flex;
+    background-color: #08748C;
+    background-color: rgba(255, 255, 255, 0.80);
+
+}
+
+.botaoDetalhes a {
+    text-decoration: none;
+    background-color: transparent;
+    font-family: "Sometype Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.0416666666666667vw;
+    color: WHITE;
+}
+
+.botaoDetalhes button {
+    width: 9vw;
+    border-radius: 0.2604166666666667vw;
+    background-color: #0F6477;
+    border: 0.1vw solid black;
+    margin-left: 73.7%;
+    padding: 0.5;
+    align-items: center;
+
+}
+
+.botaoDetalhes button:hover {
+
+    opacity: 0.8;
+    /* Diminui a opacidade para 80% */
+}
+
+
+.palavra {
+    width: 100%;
+    height: 3.5vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vw;
+}
+
+.palavra h1 {
+    background-color: transparent;
+    background-color: transparent;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vw;
+}
+
+.linhaDivisória{
+    width: 100%;
+    height: 3vw;
+    background-color: rgba(255, 255, 255, 0.80);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5vw;
+
+}
+
