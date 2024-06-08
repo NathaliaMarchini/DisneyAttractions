@@ -33,7 +33,6 @@ a {
 
 .um{
     width: 33%;
-    background-color: transparent;
 }
 
 .tres{
@@ -91,7 +90,7 @@ a {
 }
 
 #umm {
-    margin-right: 30%;
+    margin-right: 45%;
 }
 
 #doiss{
@@ -118,8 +117,6 @@ a {
 }
 
 .title {
-    
-    align-items: center;
     position: relative;
     flex-direction: column;
 }
@@ -149,6 +146,7 @@ a {
     height: 50%;
     margin-top: 2vw;
     background-color: transparent;
+    margin-left: 13%;
 }
 
 .legen h2 {
@@ -177,6 +175,7 @@ a {
     width: 55%;
     height: 10%;
     color: white;
+    margin-left: 13%;
 }
 
 .frase h1 {
@@ -188,12 +187,18 @@ a {
     text-shadow: 0.5vw 0.2vw 0px rgba(0, 0, 0, 0.5);
 }
 
+.botao button {
+    font-size: 1vw;
+    transition: transform 0.5s, box-shadow 0.5s; /* Adicionando propriedades à transição */
+}
+
+/* Mantenha as outras regras CSS inalteradas */
 .botao {
     width: 20%;
     height: 10%;
     margin-top: 4vw;
     margin-right: 43.5%;
-    
+    margin-left: 13%;
 }
 
 button {
@@ -203,15 +208,16 @@ button {
     height: 80%;
     color: white;
     box-shadow: 5px 3px 0px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
 }
+
+
 
 .botao a{
     background-color: transparent;
     font-family: "Convergence", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1vw;
+
     
 }
 

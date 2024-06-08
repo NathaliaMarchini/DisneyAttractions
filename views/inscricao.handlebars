@@ -13,7 +13,7 @@
 
 <body>
 
-    <section class="conteudo">
+    <section class="conteudo">{{!-- div.conteudo --}}
         <div class="nave">
             <div class="cont">
                 <div class="one">
@@ -32,12 +32,15 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>{{!-- /conteudo --}}
 
 
-    <div class="segunda">
-        <div class="box">
-            <div class="ladoWhite">
+    <div class="segunda">{{!-- div.segunda --}}
+
+        <div class="box">{{!-- div.box --}}
+
+            <div class="ladoWhite">{{!-- div.ladowhite --}}
+
                 <div class="formulario">
                     <form action="/inscricao" method="post">
                         <div class="InfoOne">
@@ -65,16 +68,20 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div>{{!-- /formulario --}}
 
-            </div>
+            </div>{{!-- /ladowhite --}}
+
             <div class="ladoBlue">
+                <div class="linhaB" id="linhaUM"></div>
                 <div class="text">
                     <h1> A Aventura espera! Preencha com suas informações.</h1>
                 </div>
+                <div class="linhaB" id="linhaDois"></div>
             </div>
-        </div>
-    </div>
+        </div>{{!-- /box --}}
+
+    </div>{{!-- /segunda --}}
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {

@@ -31,7 +31,7 @@
                     <a href="/listaInsc" id="LIIN">Lista inscrições</a>
                 </div>
                 <div class="two">
-                    <input type="text" id="search" placeholder="Search...">
+                    <input type="text" id="searchInput" placeholder="Search..." autocomplete="off">
                 </div>
                 <div class="three">
                     <div class="image">
@@ -554,6 +554,7 @@
     </section>
 
     <script>
+        // Função para rotação automática de imagens
         let count = 1;
         document.getElementById("radio1").checked = true;
 
@@ -566,13 +567,11 @@
             if (count > 4) {
                 count = 1;
             }
-
             document.getElementById("radio" + count).checked = true;
-
         }
 
-
         document.addEventListener("DOMContentLoaded", function () {
+            // Função para manipulação dos botões plus
             const plusButtons = document.querySelectorAll('.plusbutton a');
             plusButtons.forEach(function (plusButton) {
                 plusButton.addEventListener('click', function (event) {
@@ -590,20 +589,37 @@
                     }
                 });
             });
+
+
+            // Função para rolar até a atração correspondente
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', function () {
+                const filter = searchInput.value.toLowerCase();
+                const attractions = document.querySelectorAll('.box .quadrado, .box .quadrado2, .box .quadrado3');
+                let firstMatch = null;
+
+                attractions.forEach(function (attraction) {
+                    const nameElement = attraction.querySelector('.nome h1');
+                    if (nameElement) {
+                        const textValue = nameElement.textContent || nameElement.innerText;
+                        if (textValue.toLowerCase().indexOf(filter) > -1 && !firstMatch) {
+                            firstMatch = attraction;
+                        }
+                    }
+                });
+
+                if (filter === "") {
+                    // Se a barra de pesquisa estiver vazia, rolar para o topo
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    // Scroll to the first matching attraction
+                    if (firstMatch) {
+                        firstMatch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
         });
-
-
-
-
-        plusButton.addEventListener('click', function (event) {
-            event.preventDefault();
-            console.log("Botão de plus clicado");
-            const atracao = document.querySelector('.nome h1').textContent;
-            localStorage.setItem('atracao', atracao);
-        });
-
     </script>
-
 </body>
 
 </html>

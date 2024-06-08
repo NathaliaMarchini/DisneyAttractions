@@ -15,83 +15,97 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+   
 
 </head>
 
 <body>
-    <section class="container2">
+    <section class="container2">{{!-- section.container2 --}}
 
-        <div class="volt">
-            <div class="um">
-                <h1><a href="/">Voltar</a></h1>
-            </div>
-            <div class="dois"></div>
-        </div>
-
-        <div class="conteudoD">
-            <div class="tres">
-                <img src="/img/mickey.png" alt="Login Image">
-            </div>
-            <div class="quatro">
-                <div class="cadastroC">
-                    <div class="part1">
-                        <h1><a href="">Cadastre-se</a></h1>
-                    </div>
-
-                    <div class="part2">
-                        <div class="googleB">
-                            <div class="googleimg"><img src="/img/googleicon.png" alt=""></div>
-                            <div class="loginG">
-                                <h1><a href="">Faça seu login com sua conta google</a></h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="part3">
-                        <div class="line"></div>
-                        <div class="between">
-                            <h1>crie seu USERNAME</h1>
-                        </div>
-                        <div class="line2"></div>
-                    </div>
-
-                    <div class="part4">
-                        <div class="input1">
-                            <input type="text" placeholder="nome completo" id="nome-completo" />
-                        </div>
-                        <div class="input2">
-                            <input type="text" placeholder="telefone" id="telefone">
-                        </div>
-                        <div class="input3">
-                            <input type="text" placeholder="email" id="email">
-                        </div>
-                        <div class="input4">
-                            <input type="password" placeholder="senha" id="senha">
-                        </div>
-
-                        <div class="botao">
-                            <button type="submit" id="enviar-btn">Cadastrar</button>
-                        </div>
-                    </div>
-
-                    <div class="part5">
-                        <div class="quadrado">
-                            <div class="Q">
-                                <input type="checkbox" name="concordo" id="concordo">
-                            </div>
-                        </div>
-                        <div class="diretrizesF">
-                            <h1>ACEITO AS DIRETRIZES INFORMADAS</h1>
-                        </div>
-                    </div>
-
-                    <div class="part6">
-                        <h1>diretrizes informativas da plataforma disney </h1>
-                    </div>
+        <section class="container2">{{!-- section.container2 --}}
+            <div class="volt">
+                <div class="um">
+                    <h1><a href="/">Voltar</a></h1>
                 </div>
+                <div class="dois"></div>
             </div>
-        </div>
-    </section>
+
+            <div class="conteudoD">
+                <div class="tres">
+                    <img src="/img/mickey.png" alt="Imagem de Login">
+                </div>
+
+                <div class="quatro">{{!-- div.quatro --}}
+
+                    <div class="cadastroC">{{!-- div.cadastroC --}}
+
+                        <div class="part1">
+                            <h1><a href="">Cadastre-se</a></h1>
+                        </div>
+
+                        <div class="part2">
+                            <div class="googleB">
+                                <div class="googleimg"><img src="/img/googleicon.png" alt=""></div>
+                                <div class="loginG">
+                                    <h1><a href="">Faça login com sua conta do Google</a></h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="part3">
+                            <div class="line"></div>
+                            <div class="between">
+                                <h1>Crie seu USERNAME</h1>
+                            </div>
+                            <div class="line2"></div>
+                        </div>
+
+                        <div class="part4">
+                            <div class="input1">
+                                <input type="text" placeholder="Nome Completo" id="nome-completo">
+                            </div>
+                            <div class="input2">
+                                <input type="text" placeholder="Telefone" id="telefone">
+                            </div>
+                            <div class="input3">
+                                <input type="text" placeholder="Email" id="email">
+                            </div>
+                            <div class="input4">
+                                <input type="password" placeholder="Senha" id="senha">
+                            </div>
+                            <div class="botao">
+                                <button type="submit" id="enviar-btn">Cadastrar</button>
+                            </div>
+                        </div>
+
+                        <div class="part5">
+                            <div class="quadrado">
+                                <div class="Q">
+                                    <input type="checkbox" name="concordo" id="concordo">
+                                </div>
+                            </div>
+                            
+                            <div class="diretrizesF">
+                                <h1>ACEITO AS DIRETRIZES INFORMADAS</h1>
+                            </div>
+                        </div>
+
+                        <div class="part6">
+                            <h1>Diretrizes informativas da plataforma Disney</h1>
+                        </div>
+
+                    </div>{{!-- /cadastroC --}}
+
+                </div>{{!-- quatro --}}
+
+            </div>
+
+        </section>{{!-- /container2 --}}
+
+
+
+    </section>{{!-- /container2 --}}
+
 
     <script>
         document.getElementById('enviar-btn').addEventListener('click', () => {
@@ -117,11 +131,12 @@
 
                 // Redireciona o usuário para a página de perfil após alguns segundos
                 setTimeout(() => {
-                    window.location.href = '/perfil';
+                    window.location.href = '/attractions';
                 }, 1000); // Redireciona após 1 segundo (1000 milissegundos)
             }
         });
     </script>
+
 
 </body>
 

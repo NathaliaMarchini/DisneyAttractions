@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     background-color: #08748C;
+    box-sizing: border-box;
 }
 
 .conteudo {
@@ -19,7 +20,7 @@
 
 
 
-.nave{
+.nave {
     height: 72%;
 }
 
@@ -39,15 +40,24 @@
     align-items: center;
 }
 
-.one img{
+.one img {
     background-color: transparent;
     margin-left: 3vw;
     width: 2vw;
 }
+
 .one a {
     text-decoration: none;
     background-color: transparent;
     color: #043E4B;
+}
+
+#AAtt {
+    font-size: 1.5vw;
+    font-family: "Convergence", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 3.5vw;
 }
 
 .two {
@@ -60,20 +70,7 @@
 
 }
 
-input{
-    padding-left: 2vw;
-}
 
-.two input {
-    width: 90%;
-    height: 50%;
-    background-color: transparent;
-    color: transparent;
-    border-radius: 1.3vw;
-    border: 0.2vw solid #043E4B;
-    padding-left: 1.5vw;
-    color: #080808;
-}
 
 .three {
     width: 10%;
@@ -97,7 +94,7 @@ input{
     margin-top: 0.1vw;
 }
 
-.image a{
+.image a {
     background-color: transparent;
 }
 
@@ -128,7 +125,7 @@ input{
     margin-top: 3vw;
 }
 
-.segunda{
+.segunda {
     width: 100%;
     height: 44vw;
     display: flex;
@@ -137,7 +134,7 @@ input{
     flex-direction: column;
 }
 
-.box{
+.box {
     width: 75vw;
     height: 42vw;
     border-radius: 1.5625vw;
@@ -145,26 +142,30 @@ input{
     display: flex;
 }
 
-.ladoBlue{
+.ladoBlue {
     background-color: #DAE8EB;
     border-top-right-radius: 1.5625vw;
     border-bottom-right-radius: 1.5625vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.ladoWhite{
+.ladoWhite {
     background-color: transparent;
     border-top-left-radius: 1.5625vw;
     border-bottom-left-radius: 1.5625vw;
     display: flex;
     flex-direction: column;
 }
-.ladoBlue, .ladoWhite{
+
+.ladoBlue,
+.ladoWhite {
     flex: 1;
 }
 
-.formulario{
+.formulario {
     width: 100%;
     height: 80%;
     background-color: transparent;
@@ -173,13 +174,13 @@ input{
     align-items: center;
 }
 
-.formulario form{
+.formulario form {
     width: 80%;
     background-color: transparent;
     margin-top: 8vw;
 }
 
-.botoes{
+.botoes {
     width: 100%;
     height: 20%;
     display: flex;
@@ -188,10 +189,12 @@ input{
 }
 
 .botoes button:hover {
-    transform: scale(1.1); /* Aumenta a escala em 10% */
+    transform: scale(1.1);
+    /* Aumenta a escala em 10% */
 }
 
-.botaoInscrever, .botaoLimpar{
+.botaoInscrever,
+.botaoLimpar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,7 +202,7 @@ input{
     background-color: transparent;
 }
 
-.botaoInscrever button{
+.botaoInscrever button {
     width: 7.5vw;
     height: 2.5520833333333335vw;
     background-color: #18608C;
@@ -215,7 +218,7 @@ input{
     text-shadow: 2px 2px 4px rgba(66, 66, 66, 0.5);
 }
 
-.botaoLimpar button{
+.botaoLimpar button {
     width: 7.5vw;
     height: 2.5520833333333335vw;
     background-color: white;
@@ -231,16 +234,33 @@ input{
     text-shadow: 2px 2px 4px rgba(66, 66, 66, 0.5);
 }
 
-.text{
-    width: 100%;
-    height: 40%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
+
+.linhaB {
+    width: 70%;
+    height: 35%;
+    background-color: #DAE8EB;
+}
+
+#linhaUM {
+    border-bottom: 0.3vw solid white;
+}
+
+#linhaDois {
+    border-top: 0.3vw solid white;
 }
 
 
-.text h1{
+.text {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DAE8EB;
+}
+
+
+.text h1 {
     background-color: transparent;
     font-size: 1.6666666666666667vw;
     color: #565656;
@@ -250,10 +270,9 @@ input{
     text-shadow: 0vw 0.2vw 4px rgba(66, 66, 66, 0.5);
     text-align: center;
     width: 30vw;
-    margin-top: 20%;
 }
 
-.InfoOne{
+.InfoOne {
     display: flex;
     flex-direction: column;
     height: 8vw;
@@ -262,7 +281,7 @@ input{
 
 }
 
-.InfoOne label{
+.InfoOne label {
     width: 100%;
     height: 30%;
     background-color: transparent;
@@ -275,7 +294,7 @@ input{
     display: flex;
 }
 
-.InfoOne input{
+.InfoOne input {
     width: 28vw;
     height: 3vw;
     background-color: white;
@@ -283,20 +302,21 @@ input{
     border-radius: 2.0833333333333335vw;
     margin-top: 5%;
     box-shadow: 0vw 0.3vw 0.2vw rgba(133, 133, 133, 0.5);
+    font-size: 1vw;
 }
 
 
 
-.InfoTwo{
+.InfoTwo {
     display: flex;
     flex-direction: column;
     height: 8vw;
     width: 100%;
     background-color: transparent;
-    
+
 }
 
-.InfoTwo label{
+.InfoTwo label {
     width: 100%;
     height: 30%;
     background-color: transparent;
@@ -310,7 +330,7 @@ input{
 
 }
 
-.InfoTwo input{
+.InfoTwo input {
     width: 28vw;
     height: 3vw;
     background-color: white;
@@ -318,18 +338,20 @@ input{
     border-radius: 2.0833333333333335vw;
     margin-top: 5%;
     box-shadow: 0vw 0.3vw 0.2vw rgba(133, 133, 133, 0.5);
+    padding-right: 2vw;
+    font-size: 1vw;
 }
 
-.InfoThree{
+.InfoThree {
     display: flex;
     flex-direction: column;
     height: 8vw;
     width: 100%;
     background-color: transparent;
-        
+
 }
 
-.InfoThree label{
+.InfoThree label {
     width: 100%;
     height: 30%;
     background-color: transparent;
@@ -342,7 +364,7 @@ input{
     display: flex;
 }
 
-.InfoThree input{
+.InfoThree input {
     width: 28vw;
     height: 3vw;
     background-color: white;
@@ -350,5 +372,11 @@ input{
     border-radius: 2.0833333333333335vw;
     margin-top: 5%;
     box-shadow: 0vw 0.3vw 0.2vw rgba(133, 133, 133, 0.5);
+    padding-right: 2vw;
+    font-size: 1vw;
 }
 
+input{
+    padding-left: 2vw;
+    background-color: transparent;
+}

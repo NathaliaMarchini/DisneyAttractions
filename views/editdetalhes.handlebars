@@ -12,14 +12,18 @@
 
 <body>
 
-    <section class="conteudo">
+    <section class="conteudo">{{!-- conteudo --}}
+
         <div class="nave">
             <div class="cont">
                 <div class="one">
-                    <a href="/"><img asrc="/img/homeImg.png" alt=""></a>
+                    <a href="/">
+                        <img src="/img/homeImg.png" alt="">
+                    </a>
+                    <a href="/attractions" id="AAtt">Attractions</a>
                 </div>
                 <div class="two">
-                    
+
                 </div>
                 <div class="three">
                     <div class="image">
@@ -28,11 +32,14 @@
                 </div>
             </div>
         </div>
-    </section>
+
+    </section>{{!-- /conteudo --}}
 
 
-    <div class="segunda">
-        <div class="box">
+    <div class="segunda">{{!-- div.segunda --}}
+
+        <div class="box">{{!-- div.box --}}
+            
             <div class="ladoWhite">
                 <div class="formulario">
                     <form action="/detalhes/updateInscricao" method="post">
@@ -52,8 +59,7 @@
                         </div>
 
                         <div class="InfoFour">
-                            <label for="ID"></label>
-                            <input type="hidden" name="id" value="{{listaDetalhes.id}}" >
+                            <input type="hidden" name="id" value="{{listaDetalhes.id}}">
                         </div>
 
                         <div class="botoes">
@@ -67,13 +73,17 @@
                     </form>
                 </div>
 
-            </div>
+            </div>{{!-- /box --}}
+
             <div class="ladoBlue">
+                <div class="linhaB" id="linhaUM"></div>
                 <div class="text">
                     <h1> A Aventura espera! Preencha com suas informações.</h1>
                 </div>
+                <div class="linhaB" id="linhaDois"></div>
             </div>
         </div>
+    </div>{{!-- /segunda --}}
     </div>
 </body>
 

@@ -1,21 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     position: relative;
+    overflow: hidden;
 }
 
 
-
-.container2{
+.container2 {
     width: 100%;
-    height: 100%;
+    height: 50vw;
     background-image: url(/img/fundo.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
-
+    background-position: center;
+    background-size: cover;
 }
 
-.volt{
+.volt {
     width: 100%;
     height: 6vh;
     display: flex;
@@ -25,7 +25,8 @@ a {
     color: white;
     text-decoration: none;
 }
-.um h1{
+
+.um h1 {
     margin-left: 2vw;
     font-family: "Convergence", sans-serif;
     font-weight: 600;
@@ -35,60 +36,70 @@ a {
 }
 
 @keyframes brilho {
-    0% { text-shadow: 0 0 10px #daba2c; }
-    50% { text-shadow: 0 0 20px #FFFF99; }
-    100% { text-shadow: 0 0 10px #FFFF99; }
+    0% {
+        text-shadow: 0 0 10px #daba2c;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #FFFF99;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #FFFF99;
+    }
 }
 
-.um h1:hover{
+.um h1:hover {
     animation: brilho 1.5s infinite alternate;
     cursor: pointer;
 }
 
-.um, .dois{
+.um,
+.dois {
     flex: 1;
 }
 
-.conteudoD{
-    width: 100%;
-    height: 44.3vw;
-    display: flex;
-}
-
-.tres{
-    width: 50%;
-    height: 100%;
-    display: flex;
-}
-
-
-.quatro{
-    width: 50%;
-    height: 100%;
-    display: flex;
-
-}
-
-.tres img{
+.conteudoD {
     width: 100%;
     height: 100%;
+    display: flex;
 }
 
-
-
-.cadastroC{
-    margin-left: 2vw;
-    margin-top: 1vw;
-    width: 58%;
+.tres {
+    width: 50%;
     height: 90%;
+    display: flex;
+    margin-top: 1.8vw;
+}
+
+
+.quatro {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.tres img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.cadastroC {
+    margin-left: 2vw;
+    margin-top: 2vw;
+    width: 56%;
+    height: 80%;
     background-color: white;
     border-radius: 1vw;
     box-shadow: 3vw 3vw 0.2vw rgba(15, 100, 119, 1);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    /* Adicionado para evitar espaços em branco abaixo do conteúdo */
 }
 
-.part1{
+.part1 {
     width: 100%;
     height: 8%;
     display: flex;
@@ -96,7 +107,7 @@ a {
 
 }
 
-.part1 h1{
+.part1 h1 {
     font-family: "Rokkitt", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -105,11 +116,11 @@ a {
     font-size: 2vw;
 }
 
-.part1 a{
+.part1 a {
     color: black;
 }
 
-.part2{
+.part2 {
     width: 100%;
     height: 10%;
     margin-top: 1vw;
@@ -118,7 +129,7 @@ a {
     justify-content: center;
 }
 
-.googleB{
+.googleB {
     width: 70%;
     height: 84%;
     border-radius: 0.8vw;
@@ -127,7 +138,7 @@ a {
     box-shadow: 2px 3px 3px rgba(44, 44, 44, 0.5);
 }
 
-.googleimg{
+.googleimg {
     width: 20%;
     height: 100%;
     display: flex;
@@ -135,12 +146,12 @@ a {
     align-items: center;
 }
 
-.googleimg img{
+.googleimg img {
     width: 50%;
     height: 70%;
 }
 
-.loginG{
+.loginG {
     width: 80%;
     height: 100%;
     display: flex;
@@ -148,50 +159,50 @@ a {
     align-items: center;
 }
 
-.loginG h1{
+.loginG h1 {
     font-size: 0.8vw;
 }
 
-.loginG a{
+.loginG a {
     color: black;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.part3{
+.part3 {
     width: 100%;
     height: 12%;
     display: flex;
     align-items: center;
 }
 
-.line{
+.line {
     margin-left: 1vw;
     width: 22%;
     height: 0.1vw;
     background-color: #808080;
 }
 
-.between{
+.between {
     width: 50%;
     height: 100%;
 }
 
-.line2{
+.line2 {
     width: 22%;
     height: 0.1vw;
     background-color: #808080;
 }
 
-.between{
+.between {
     align-items: center;
     justify-content: center;
     display: flex;
 
 }
 
-.between h1{
+.between h1 {
     font-size: 1vw;
     color: #808080;
     font-family: "Roboto", sans-serif;
@@ -199,21 +210,27 @@ a {
     font-style: normal;
 }
 
-.part4{
+.part4 {
     width: 100%;
     height: 20vw;
     display: flex;
     flex-direction: column;
 }
 
-.input1, .input2, .input3, .input4{
+.input1,
+.input2,
+.input3,
+.input4 {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.input1 input, .input2 input, .input3 input, .input4 input{
+.input1 input,
+.input2 input,
+.input3 input,
+.input4 input {
     width: 65%;
     height: 75%;
     border: none;
@@ -225,33 +242,34 @@ a {
 }
 
 input[type="text"] {
-    padding-left: 0.5vw; /* Espaçamento para o texto */
+    padding-left: 0.5vw;
+    /* Espaçamento para o texto */
 }
 
 
 
-.input1 input::placeholder, .input2 input::placeholder, .input3 input::placeholder, .input4 input::placeholder{
+.input1 input::placeholder,
+.input2 input::placeholder,
+.input3 input::placeholder,
+.input4 input::placeholder {
     text-align: center;
     color: #808080;
 }
 
-
-
-
-.part5{
+.part5 {
     width: 100%;
     height: 4vw;
     display: flex;
 }
 
-.quadrado{
+.quadrado {
     width: 25%;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.Q{
+.Q {
     margin-left: 60%;
     width: 4vw;
     height: 4vw;
@@ -261,12 +279,12 @@ input[type="text"] {
     align-items: center;
 }
 
-.Q input{
+.Q input {
     width: 1.2vw;
     height: 1.2vw;
 }
 
-.botao{
+.botao {
     width: 100%;
     height: 3vw;
     display: flex;
@@ -274,7 +292,7 @@ input[type="text"] {
     align-items: center;
 }
 
-.botao button{
+.botao button {
     width: 6vw;
     height: 1.8vw;
     border-radius: 1vw;
@@ -282,29 +300,29 @@ input[type="text"] {
     border: 0.1vw solid #808080;
     font-size: 0.8vw;
     color: #9B9999;
-    
+
 }
 
-.botao button:hover{
+.botao button:hover {
     color: #5a5959;
 }
 
-.diretrizesF{
+.diretrizesF {
     width: 75%;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.diretrizesF h1{
-    color:#808080;
+.diretrizesF h1 {
+    color: #808080;
     font-size: 0.8vw;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.part6{
+.part6 {
     width: 100%;
     height: 4.8vw;
     display: flex;
@@ -312,10 +330,10 @@ input[type="text"] {
     align-items: center;
 }
 
-.part6 h1{
+.part6 h1 {
     margin-top: -2.5vw;
     text-decoration: underline;
-    color:#0000FF ;
+    color: #0000FF;
     font-size: 0.8vw;
     font-family: "Roboto", sans-serif;
     font-weight: 400;

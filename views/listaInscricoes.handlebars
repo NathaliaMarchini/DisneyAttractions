@@ -47,13 +47,16 @@
     </div>
 
 
-    <section class="caixa">
-        <div class="WhiteCaixa">
+    <section class="caixa">{{!-- section.caixa --}}
+
+        <div class="WhiteCaixa">{{!-- div.whitecaixa --}}
             {{!-- each vem aqui --}}
 
             {{#each listaInscricoes}}
-            <div class="containerticket">
-                <div class="ticketC">
+
+            <div class="containerticket">{{!-- div.containerticket --}}
+
+                <div class="ticketC">{{!-- div.ticketc --}}
                     <div class="bluePart"></div>
                     <div class="linha"></div>
                     <div class="whitePart">
@@ -92,8 +95,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+
+                </div>{{!-- /ticketC --}}
+
                 <div class="meio"></div>
+
                 <div class="fim">
                     <div class="umFr">
                         <h1>Attraction</h1>
@@ -113,9 +119,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                
+            </div>{{!-- conteinerticket --}}
+
             <div class="botaoDetalhes">
-                <button><a href="/inscricao/{{this.id}}">See details</a></button>
+                <button><a href="/inscricao/{{this.id}}">Ver detalhes</a></button>
             </div>
             <div class="linhaDivisória">
                 <hr>
@@ -123,8 +131,10 @@
 
             {{/each}}
             {{!-- e fecha aqui --}}
-        </div>
-    </section>
+
+        </div>{{!-- /whitecaixa --}}
+
+    </section>{{!-- /caixa --}}
 
 
 </body>
